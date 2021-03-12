@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="text-center" style="background-color: #333; color: #fff">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading mt-5 mb-5">
+          Mathew Davidov - Local Storage Lab
+        </h1>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="title">Notes Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                placeholder="Title"
+                maxlength="40"
+              />
+            </div>
+            <div class="form-group">
+              <label for="textarea">Text</label>
+              <textarea
+                class="form-control"
+                id="textarea"
+                rows="10"
+                cols="80"
+                oninput="saveText()"
+              ></textarea>
+            </div>
+          </div>
+          <button type="button" class="btn btn-danger" onclick="clearText()">
+            Delete Text
+          </button>
+        </form>
+      </main>
+
+      <div>
+        <p><a href="../../labs.html">Link back home</a></p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+    <script src="localstorage.js"></script>
+  </body>
+</html>
