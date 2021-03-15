@@ -18,7 +18,7 @@ const start = () => {
 
   // Attach the image to be used for the sprite.
   Scene.sprite.img = new Image();
-  Scene.sprite.img.src = Scene.sprite.src;
+  Scene.sprite.img.src = "./images/spritesheet.png";
 
   // Wait till the parrot image is loaded before starting the animation.
   Scene.sprite.img.onload = () => {
